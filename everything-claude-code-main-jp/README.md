@@ -2,6 +2,16 @@
 
 **Anthropicハッカソン優勝者によるClaude Code設定の完全コレクション**
 
+> **📋 クレジット・著作権表示**
+> 
+> このリポジトリは [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) の日本語翻訳版です。
+> 
+> - **オリジナル著作者**: Affaan Mustafa ([@affaanmustafa](https://x.com/affaanmustafa))
+> - **ライセンス**: MIT License
+> - **翻訳**: t2k2pp
+> 
+> オリジナルリポジトリに感謝します。
+
 このリポジトリには、Claude Codeで日常的に使用している本番環境対応のエージェント、スキル、フック、コマンド、ルール、MCP設定が含まれています。これらの設定は、10ヶ月以上にわたる実際の製品開発での集中的な使用を通じて進化しました。
 
 ---
