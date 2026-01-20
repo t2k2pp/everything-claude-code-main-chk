@@ -1,0 +1,120 @@
+{
+    "mcpServers": {
+        "github": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-github"
+            ],
+            "env": {
+                "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT_HERE"
+            },
+            "description": "GitHub操作 - PR、イシュー、リポジトリ"
+        },
+        "firecrawl": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "firecrawl-mcp"
+            ],
+            "env": {
+                "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_KEY_HERE"
+            },
+            "description": "Webスクレイピングとクロール"
+        },
+        "supabase": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@supabase/mcp-server-supabase@latest",
+                "--project-ref=YOUR_PROJECT_REF"
+            ],
+            "description": "Supabaseデータベース操作"
+        },
+        "memory": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-memory"
+            ],
+            "description": "セッション間の永続メモリ"
+        },
+        "sequential-thinking": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ],
+            "description": "思考連鎖推論"
+        },
+        "vercel": {
+            "type": "http",
+            "url": "https://mcp.vercel.com",
+            "description": "Vercelデプロイとプロジェクト"
+        },
+        "railway": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@railway/mcp-server"
+            ],
+            "description": "Railwayデプロイ"
+        },
+        "cloudflare-docs": {
+            "type": "http",
+            "url": "https://docs.mcp.cloudflare.com/mcp",
+            "description": "Cloudflareドキュメント検索"
+        },
+        "cloudflare-workers-builds": {
+            "type": "http",
+            "url": "https://builds.mcp.cloudflare.com/mcp",
+            "description": "Cloudflare Workersビルド"
+        },
+        "cloudflare-workers-bindings": {
+            "type": "http",
+            "url": "https://bindings.mcp.cloudflare.com/mcp",
+            "description": "Cloudflare Workersバインディング"
+        },
+        "cloudflare-observability": {
+            "type": "http",
+            "url": "https://observability.mcp.cloudflare.com/mcp",
+            "description": "Cloudflare監視/ログ"
+        },
+        "clickhouse": {
+            "type": "http",
+            "url": "https://mcp.clickhouse.cloud/mcp",
+            "description": "ClickHouse分析クエリ"
+        },
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@context7/mcp-server"
+            ],
+            "description": "ライブドキュメント検索"
+        },
+        "magic": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@magicuidesign/mcp@latest"
+            ],
+            "description": "Magic UIコンポーネント"
+        },
+        "filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "/path/to/your/projects"
+            ],
+            "description": "ファイルシステム操作（パスを設定）"
+        }
+    },
+    "_comments": {
+        "usage": "必要なサーバーを~/.claude.jsonのmcpServersセクションにコピー",
+        "env_vars": "YOUR_*_HEREプレースホルダーを実際の値に置き換え",
+        "disabling": "プロジェクトごとに無効にするにはプロジェクト設定でdisabledMcpServers配列を使用",
+        "context_warning": "コンテキストウィンドウを保持するため、MCPは10個未満に"
+    }
+}
